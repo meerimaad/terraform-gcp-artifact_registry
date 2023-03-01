@@ -26,14 +26,14 @@ provider “google” {
 ### Create new main.tf file and copy paste this line of code
 ```
 module “my-repository”{
-    source = “./module”
+    source = "meerimaad/artifact_registry/gcp"
     artifact-config   = {
         repository_id = “my-repo”
         location      = “us-central1”
     }
 }
 module “nodejs-repository”{
-    source = “./module”
+    source = "meerimaad/artifact_registry/gcp"
     artifact-config   = {
         repository_id = “nodejs-repo”
         location      = “us-central1”
